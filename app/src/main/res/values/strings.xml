@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">HomeCutCliente</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="horarios">
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
     <string name="facebook_application_id" translatable="false">710334366012389</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_localizacao">LocalizacaoActivity</string>
+
+
 </resources>

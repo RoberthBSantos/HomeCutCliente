@@ -1,43 +1,58 @@
 package com.example.roberthsantos.homecutcliente.Models;
 
-import com.firebase.ui.auth.data.model.User;
+import com.google.firebase.auth.FirebaseUser;
+import com.orm.SugarRecord;
 
-import java.util.Date;
-import java.util.List;
-
-public class Agendamento {
-    private String id;
-    private List<Servico> servicos;
-    private User user;
-    private Date date;
+public class Agendamento extends SugarRecord {
+    private String idAgendamento;
+    private FirebaseUser user;
+    private String date;
     private String horario;
+    private String latitude;
+    private String longitude;
 
-
-    public Agendamento(String id, List<Servico> servicos, User user, Date date, String horario) {
-        this.id = id;
-        this.servicos = servicos;
+    public Agendamento(String idAgendamento, FirebaseUser user, String date, String horario, String latitude, String longitude) {
+        this.idAgendamento = idAgendamento;
         this.user = user;
         this.date = date;
         this.horario = horario;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
-    public String getId() {
-        return id;
+    public Agendamento() {
     }
 
-    public List<Servico> getServicos() {
-        return servicos;
+
+    public String getIdAgendamento() {
+        return idAgendamento;
     }
 
-    public User getUser() {
+    public void setId(String id) {
+        this.idAgendamento = idAgendamento;
+    }
+
+    public FirebaseUser getUser() {
         return user;
     }
 
-    public Date getDate() {
+    public void setUser(FirebaseUser user) {
+        this.user = user;
+    }
+
+    public String getDate() {
         return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getHorario() {
         return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 }

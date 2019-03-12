@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:644141855840:android:2ac43362256b9d46",
+        "android_client_info": {
+          "package_name": "com.example.roberthsantos.homecutadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644141855840-ihola5k2lo94t75kvgt7tkkomr6qrq5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roberthsantos.homecutadmin",
+            "certificate_hash": "9924dd8c46c250f25c285940dfcb37ef24a8ed95"
+          }
+        },
+        {
+          "client_id": "644141855840-mp5g55f8cg27necgakrhmqtqah12pq1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALX2uH5QdptwnnWIg2BRdmlEaVhr10Ty8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644141855840-mp5g55f8cg27necgakrhmqtqah12pq1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:644141855840:android:212e84516bcf12cf",
         "android_client_info": {
           "package_name": "com.example.roberthsantos.homecutcliente"

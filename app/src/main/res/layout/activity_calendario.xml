@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    tools:context=".App.CalendarioActivity">
+
+    <TextView
+        android:id="@+id/minhaData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:text="Selecione a Data"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="44dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"></CalendarView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botao_calendario"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape_servico"
+
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:onClick="selecionarData"/>
+
+</LinearLayout>
